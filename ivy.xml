@@ -1,0 +1,24 @@
+<ivy-module version="2.0">
+	<info organisation="prom" module="PaliaProM" revision="latest">
+		<description>
+			Version VERSION
+		</description>
+	</info>
+	<configurations>
+		<conf name="default" extends="lib" />
+		<conf name="lib" />
+	</configurations>
+	<dependencies defaultconf="default">
+		<!-- ProM dependencies. -->
+		<!-- Please put every ProM dependency on a single line. -->
+		<!-- ProM framework. -->
+		<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+		<!-- ProM packages. -->
+		<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="BPMNVisualizer" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+		<!-- Github package from JitPack -->
+		<dependency org="com.github.delas" name="palia" rev="b9b1323d0b" changing="true" transitive="true" />
+	</dependencies>
+</ivy-module>
